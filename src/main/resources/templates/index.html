@@ -62,7 +62,7 @@
             // apikey
             application_id: "",
             // 가격 수정
-            price: 100,
+            price: saveOrderDto.item.itemPrice,
             order_name: "테스트결제",
             // order테이블에서 받아온 idx 값을 넣는다.
             order_id: orderIdx,
@@ -82,7 +82,7 @@
                 name: "테스트아이템",
                 qty: 1,
                 // 가격 수정
-                price: 100,
+                price: saveOrderDto.item.itemPrice,
               },
             ],
             extra: {
